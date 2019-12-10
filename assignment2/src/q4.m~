@@ -1,0 +1,19 @@
+close all;
+clear;
+bell = rgb2gray(imread("../input_data/bell.jpg"));
+
+boosted_bell_3_2 = highboost(bell,5,2);
+imshow(boosted_bell_3_2,[]);
+figure
+imshow(bell,[]);
+
+function boosted = highboost(I,sz,w)
+  kernel = ones(sz,sz)*-1;
+  c = floor(sz/2)+1;
+  kernel(c,c) = sz*sz-1+w;
+  disp(kernel);
+  boosted = convolve_with(I,kernel);
+end  
+
+
+
