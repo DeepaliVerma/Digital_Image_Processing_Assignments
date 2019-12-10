@@ -1,4 +1,4 @@
-# Digital_Image_Processing_Assignments
+# Digital Image Processing Assignments
 
 ### All assignments completed as a part of my Digital Image Processing Course
 ### Topics
